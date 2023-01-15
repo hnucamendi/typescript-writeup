@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "typescript-writeup",
+  "version": "1.0.0",
+  "description": "Installing and setting up TypeScript is relatively simple, here are the basic steps:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnucamendi/typescript-writeup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnucamendi/typescript-writeup/issues"
+  },
+  "homepage": "https://github.com/hnucamendi/typescript-writeup#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@jest/globals": "^29.3.1",
+    "babel-jest": "^29.3.1",
+    "ts-jest": "^29.0.5"
+  }
+}
