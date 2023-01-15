@@ -1,7 +1,7 @@
 import { expect, test } from "@jest/globals";
 import Bank from "./bank";
 
-test("create an instance of BankAccount class", () => {
+test("create an instance of Bank class", () => {
   let account = new Bank("John Doe", "12345", 1000);
   expect(account.name).toBe("John Doe");
   expect(account.accountNumber).toBe("12345");

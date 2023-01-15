@@ -1,10 +1,15 @@
-// ## **Bank Problem**
-
-// 1. Create a class for a bank account that has properties for the account holder's name, account number, and balance.
+// **Bank Problem**
+// Create a class for a bank account that has properties for the account holder's name, account number, and balance.
 // The class should have methods for depositing and withdrawing money, as well as a method to check the account balance.
 // Use type annotations for the properties and methods, and make sure to catch any errors that may occur during the deposit and withdrawal process.
 
+/** Class representing a Bank */
 class Bank {
+  /**
+   * @param {string} name - name of the bank user
+   * @param {string} accountNumber - account number for the bank user
+   * @param {number} balance - current balance in the users bank account
+   */
   name: string;
   accountNumber: string;
   balance: number;
@@ -18,12 +23,22 @@ class Bank {
     this.accountNumber = accountNumber;
     this.balance = balance;
   }
+  /**
+   *
+   * @param amount
+   * @returns {boolean} Returns true if deposit was succesful. Returns false if deposit was not successful
+   */
   deposit(amount: number): boolean {
     if (!amount || amount < 0) return false;
     this.balance += amount;
     return true;
   }
 
+  /**
+   *
+   * @param amount
+   * @returns {boolean} Returns true if withdraw was succesful. Returns false if withdraw was not successful or throws new Error if user has insufficient funds
+   */
   withdraw(amount: number): boolean {
     if (!amount || amount < 0) return false;
     if (amount > this.balance) throw new Error("[error] insufficient funds");
@@ -31,6 +46,10 @@ class Bank {
     return true;
   }
 
+  /**
+   *
+   * @returns {number} Returns current balance in the users account
+   */
   checkBalance(): number {
     return this.balance;
   }
