@@ -5,14 +5,14 @@
 
 /** Class representing a Bank */
 class Bank {
+  name: string;
+  accountNumber: string;
+  balance: number;
   /**
    * @param {string} name - name of the bank user
    * @param {string} accountNumber - account number for the bank user
    * @param {number} balance - current balance in the users bank account
    */
-  name: string;
-  accountNumber: string;
-  balance: number;
   constructor(name: string, accountNumber: string, balance: number) {
     if (!name || !accountNumber || balance < 0) {
       throw new Error(
