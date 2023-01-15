@@ -1,6 +1,9 @@
 # Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [Important](#important)
+  - [How to test code](#how-to-test-code)
+  - [File Tree](#file-tree)
 - [**Installation**](#installation)
 - [**The Basics**](#the-basics)
   - [**How does TypeScript relate to JavaScript?**](#how-does-typescript-relate-to-javascript)
@@ -28,6 +31,42 @@
   - [**Shape Problem**](#shape-problem)
 - [**Resources**](#resources)
 - [**Additional Notes**](#additional-notes)
+
+# Important
+
+The objective is to write code that allows the existing tests to pass. You should write code that solve the problem in the prompt, and should be able to read and understand the tests in order to write code for the tests to pass. You should not edit the tests!
+
+## How to test code
+
+1. Make sure you are in the root directory
+2. run `pwd` and ensure you are not in the directory of a specific problem
+3. run `jest ./{directory}` Example: `jest ./sum/`
+4. This should run jest to test your code and will provide logs (passing or not passing)
+
+## File Tree
+
+```
+.
+├── README.md
+├── babel.config.js
+├── bank
+│   ├── bank.test.ts
+│   └── bank.ts
+├── car
+│   ├── car.test.ts
+│   └── car.ts
+├── jest.config.cjs
+├── package.json
+├── person
+│   ├── person.test.ts
+│   └── person.ts
+├── shape
+│   ├── shape.test.ts
+│   └── shape.ts
+└── sum
+├── sum.test.ts
+└── sum.ts
+```
 
 # **Installation**
 
