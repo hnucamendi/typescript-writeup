@@ -17,14 +17,14 @@ test("create a rectangle with negative width and height throws error", () => {
   );
 });
 
-test("create a circle with radius", () => {
-  let circle = new Circle(10, 6);
+test("create a circle with width and height", () => {
+  let circle = new Circle(10, 10);
   expect(circle.radius).toBe(5);
   expect(circle.calcArea()).toBeCloseTo(78.53981633974483);
 });
 
 test("create a circle with negative radius throws error", () => {
-  expect(() => new Circle(-10, 6)).toThrowError(
+  expect(() => new Circle(-10, -10)).toThrowError(
     "[error] please make sure width and height are valid whole numbers"
   );
 });
